@@ -1,6 +1,6 @@
 import pygame
 import random
-from constants import SHOT_RADIUS
+from constants import *
 from circleshape import CircleShape
 
 class Shot(CircleShape):
@@ -12,5 +12,3 @@ class Shot(CircleShape):
 
 	def update(self, dt):
 		self.position += self.velocity * dt
-
-	def shoot(
